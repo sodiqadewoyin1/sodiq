@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student profile</title>
+    </head>
+    <style>
+         .st{
+            overflow: scroll;
+            width: 800px;
+            height: 200px;
+
+         }
+
+    </style>
+    <body>
+        
+   <div class="st">
+        {% for item in products%}
+        <img src={{item.myimage}} />
+        <span>{{item.prodtitle}}</span>
+        <span>#{{item.amount}}</span>
+        {% endfor %}
+    </div>
+
+              
+
+    </body>
+
+</html>
