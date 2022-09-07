@@ -12,7 +12,7 @@ def index():
 @app.route('/job')
 def job():
 
-    return render_template('job.html')
+    return render_template('hotjob.html')
 
 
 @app.route('/form')
