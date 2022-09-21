@@ -10,17 +10,15 @@
     <h2>
         Job Application Form
     </h2>
-    <form>
-        Name<br><br><input type="text" placeholder="job_id">
+   <span>{{msg}}</span>
+    <form  action="{{url_for('add_record')}}"  method="post">
         <input type="text" name="title" placeholder="title">
-        <input type="text" name="description" placeholder="description"><br> <br>
+        <input type="text" name="description" placeholder="description" size="25"><br> <br>
         <input type="text" name="responsibility" placeholder="responsibility">
-        <input type="text" name="date_posted" placeholder="date_posted"><br><br>
         Address<input type="text" name="salary" placeholder="salary"><br><br>
         <input type="text" name="deadline" placeholder="deadline"><br><br>
         
         <input type="submit">
-        
     </form>
     
 </body>
